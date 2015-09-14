@@ -1,7 +1,12 @@
-<div class="bs-example">
+<div class="container">
+    <div class="row">
+        <div class="col offset-s4 offset-m4 offset-l4 s4 m4 l4">
+
+
+<div class="card-panel bs-example">
     <form role="form" name="form1">
         <div class="form-group">
-            <p>Welcome, {{user.mail}}:</p>
+            <p>Welcome {{user.mail}}</p>
             <label for="exampleInputEmail1">Mail</label>
             <input type="text" placeholder="Enter name" class="form-control" required ng-model="user.mail">
         </div>
@@ -12,4 +17,8 @@
         <button class="btn btn-default" type="submit" ng-disabled="form1.$invalid" ng-click="login(user)">Submit</button>
         <p>{{msgtxt}}</p>
     </form>
+</div>
+                
+        </div>
+    </div>
 </div>
